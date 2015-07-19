@@ -8,10 +8,22 @@
 $ git --version
 git version 1.9.1
 
-# para ver o diff com cores
+# Compare two commits, printing each line that is present in one but not the other:
+$ git diff [id 1] [id 2] # sem os colchetes
+
+# Make a copy of a entire Git repository, including the history, onto yout computer:
+$ git clone [url]
+
+# Temporarily reset all files in a repository to their state at the time of a specific commit:
+$ git chekcout [id do commit]
+
+# para ver o diff com cores:
 $ git config --global color.ui auto
 
-# lista commits com gráfico de barras das alterações feitas (diffstat) 
+# Show the commits made in a repository, starting with the first:
+$ git log
+
+# Listar commits com gráfico de barras das alterações feitas (diffstat) :
 $ git log --stat
 
 # 
