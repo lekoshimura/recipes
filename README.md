@@ -16,6 +16,12 @@ $ git init
 # Compare two commits, printing each line that is present in one but not the other:
 $ git diff [id 1] [id 2] # sem os colchetes
 
+# Compare working directory and stagin area
+$ git diff 
+
+# Compare staging area and (the last commit on) the repository
+$ git diff --staged
+
 # Make a copy of a entire Git repository, including the history, onto yout computer:
 $ git clone [url]
 
@@ -31,9 +37,13 @@ $ git log
 # Listar commits com gráfico de barras das alterações feitas (diffstat) :
 $ git log --stat
 
-# 
+# Restore a commit to the working directory
 $ git checkout [id do commit antigo]
 You are in 'detached HEAD' state.
 # - O quê acontece se você fizer alterações neste estado?
 # - Como voltar ao commit mais recente?
+#   $ git checkout master
+
+# Recupera arquivos do repository. As diferenças no staging area e working directory são sobrescritas. CUIDADO: não há como recuperar as diferenças que foram sobrescritas!
+$ git reset --hard
 ```
