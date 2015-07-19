@@ -8,6 +8,11 @@
 $ git --version
 git version 1.9.1
 
+#  Initializing a Repository 
+$ git init
+# - Após a criação do repositório (=> do arquivo .git no diretório raíz do projeto), ainda não há commits. 
+# - O prompt só vai exibir o branch atual após o primeiro commit.
+
 # Compare two commits, printing each line that is present in one but not the other:
 $ git diff [id 1] [id 2] # sem os colchetes
 
