@@ -49,4 +49,13 @@ You are in 'detached HEAD' state.
 
 # Recupera arquivos do repository. As diferenças no staging area e working directory são sobrescritas. CUIDADO: não há como recuperar as diferenças que foram sobrescritas!
 $ git reset --hard
+
+# Merge branch1 into the the currently checked-out
+$ git merge branch1
+
+# Restore your files to their state before you started the merge
+$ git merge --abort
+
+# Compare a commit to its parent. Useful when "git log" return commit sfrom several branches and you don´t know what is the parent commit of commit_id.
+$ git show commit_id
 ```
